@@ -138,8 +138,12 @@ void loadLevel(int level_enemies[], int level_item_uses[], int array_size) {
         }
     }
 
-    start();
+    if(player.health >= 1) {
+        printf("You Win\n");
+    }
+    
     usleep(SLEEP_TIME(2));
+    start();
 }
 
 void fight(Player *plr, Enemy *enemy) {
@@ -179,7 +183,7 @@ void fight(Player *plr, Enemy *enemy) {
                     }
                 }
 
-                //usleep(SLEEP_TIME(1.5));
+                usleep(SLEEP_TIME(1.5));
                 break;
             case '2':
                 useItem();
@@ -187,7 +191,7 @@ void fight(Player *plr, Enemy *enemy) {
                     plr->health -= enemy->damage;
                 }
 
-                //usleep(SLEEP_TIME(2));
+                usleep(SLEEP_TIME(2));
                 break;
             case 'r':
                 start();
