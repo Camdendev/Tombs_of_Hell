@@ -1,6 +1,7 @@
 # Tombs_of_Hell
-Tombs of Hell is a simple text based game played in the command line.<br>
+Tombs of Hell is a very simple text based game played in the command line.<br>
 The goal of this game is to play through the nine levels and defeat various monsters and bosses<br>
+More features may be added in the future such as additional items and level, unique monster attacks, maybe a level editor and better looking ui too...idk<br>
 
 # Enemies
 | Enemy Name | Health | Defense | Damage | Difficulty |
